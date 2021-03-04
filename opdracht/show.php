@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "db.con.php";
 $uid = $_GET['ID'];
 $stmt = $db_conn->prepare("SELECT * FROM superheroes WHERE ID = '$uid'");
 $stmt->execute();

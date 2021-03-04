@@ -1,5 +1,5 @@
 <?php
-require "db.php";
+require "db.con.php";
 error_reporting(0);
 $uid = $_GET['ID'];
 //haalt specifieke ID van gedrukte knop op

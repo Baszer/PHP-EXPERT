@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "db.con.php";
 
 error_reporting(0);
 
@@ -78,9 +78,9 @@ error_reporting(0);
 					$idname = $rows['ID'];
 					echo "<tr><td>" . $rows['Title'] . "</td>";
 					echo "<td>" . $rows['Alignment'] . "</td>";
-					echo "<td><a class='btn' href='superheroes_show.php?ID=$idname'><i class='far fa-eye'></i></a></td>";
-					echo "<td><a class='btn' href='superheroes_edit.php?ID=$idname'><i class='fa fa-magic' aria-hidden='true'></i></a></td>";
-					echo "<td><a class='btn' href='superheroes_delete.php?ID=$idname'><i class='fas fa-times'> </i></a></td></tr>";
+					echo "<td><a class='btn' href='show.php?ID=$idname'><i class='far fa-eye'></i></a></td>";
+					echo "<td><a class='btn' href='edit.php?ID=$idname'><i class='fa fa-magic' aria-hidden='true'></i></a></td>";
+					echo "<td><a class='btn' href='delete.php?ID=$idname'><i class='fas fa-times'> </i></a></td></tr>";
 				}
 				?>
 			</table>

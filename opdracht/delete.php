@@ -1,6 +1,6 @@
 <?php
 
-include "db.php";
+include "db.con.php";
 //is database connectie
 $uid = ($_GET['ID']);
 //vraagt ID van de gekozen persoon knop
