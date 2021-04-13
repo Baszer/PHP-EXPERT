@@ -65,6 +65,8 @@ error_reporting(0);
 				<tr>
 					<th>Title</th>
 					<th>Alignment</th>
+					<th>Gender</th>
+					<th>ID</th>
 					<th>view</th>
 					<th>edit</th>
 					<th>delete</th>
@@ -73,11 +75,14 @@ error_reporting(0);
 
 				<?php
 				$stmttasks = $db_conn->prepare("SELECT * FROM superheroes limit 100");
-				$stmttasks->execute();
+				$stmttasks->execute();   
 				foreach ($stmttasks as $rows) {
 					$idname = $rows['ID'];
 					echo "<tr><td>" . $rows['Title'] . "</td>";
-					echo "<td>" . $rows['Alignment'] . "</td>";
+					echo "<td>" . $rows['Alignment'] . "</td>";	
+					echo "<td>" . $rows['Gender'] . "</td>";					
+					echo "<td>" . $rows['ID'] . "</td>";
+
 					echo "<td><a class='btn' href='show.php?ID=$idname'><i class='far fa-eye'></i></a></td>";
 					echo "<td><a class='btn' href='edit.php?ID=$idname'><i class='fa fa-magic' aria-hidden='true'></i></a></td>";
 					echo "<td><a class='btn' href='delete.php?ID=$idname'><i class='fas fa-times'> </i></a></td></tr>";

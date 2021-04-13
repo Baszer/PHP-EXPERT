@@ -78,7 +78,7 @@ error_reporting(0);
     </tr>
   
                 <?php
-                       $stmttasks = $db_conn->prepare("SELECT * FROM superheroes WHERE ID = '$uid'");
+                       $stmttasks = $db_conn->prepare("SELECT  * FROM superheroes WHERE ID = '$uid'");
                        $stmttasks->execute();
                          foreach($stmttasks as $rows){
                         

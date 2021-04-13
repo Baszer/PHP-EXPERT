@@ -194,7 +194,7 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none;
+  border-style: none;+
 }
 
 svg {
@@ -204,6 +204,7 @@ svg {
 
 table {
   border-collapse: collapse;
+
 }
 
 caption {
